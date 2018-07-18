@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.android.gapsproject.Address_Parking"
+    android:layout_margin="16dp">
+
+    <ImageView
+        android:id="@+id/place"
+        android:layout_width="match_parent"
+        android:layout_height="174dp"
+        android:src= "@drawable/ic_menu_camera"/>
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="98dp"
+        android:layout_x="-3dp"
+        android:layout_y="267dp"
+        android:ems="10"
+        android:gravity="center_horizontal"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="258dp"
+        android:layout_height="53dp"
+        android:layout_x="46dp"
+        android:layout_y="175dp"
+        android:text="Adress Details"
+        android:textColor="@android:color/background_dark"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+</AbsoluteLayout>

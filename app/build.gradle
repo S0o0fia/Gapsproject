@@ -1,0 +1,69 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion "26.0.1"
+    defaultConfig {
+        applicationId "com.android.gapsproject"
+        minSdkVersion 16
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled = true
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            multiDexEnabled = false
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    productFlavors {
+    }
+}
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:design:26.0.1'
+    compile 'com.android.support:appcompat-v7:26.0.1'
+}
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+        //compile 'com.android.support:appcompat-v7:26.0.1'
+
+        //compile 'com.google.android.gms:play-services:6.5.87'
+    })
+
+
+
+
+    compile 'com.android.support:appcompat-v7:26.+'
+    //compile 'com.google.android.gms:play-services:11.0.4'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    compile 'android.arch.lifecycle:runtime:1.0.0-alpha5'
+    compile 'android.arch.lifecycle:extensions:1.0.0-alpha5'
+    compile 'com.android.support:support-v4:26.+'
+    compile 'com.android.support:design:26.+'
+    compile 'com.google.android.gms:play-services-maps:11.0.4'
+    compile 'com.google.android.gms:play-services-location:11.0.4'
+    compile 'com.google.android.gms:play-services:11.0.4'
+    compile "com.squareup.picasso:picasso:2.4.0"
+    testCompile 'junit:junit:4.12'
+
+    compile 'com.android.volley:volley:1.0.0'
+    compile 'com.google.code.gson:gson:2.5'
+}
+dependencies {
+    compile 'com.android.support.constraint:constraint-layout:+'
+}
+dependencies {
+    compile 'com.android.support.constraint:constraint-layout:+'
+}
+dependencies {
+    compile 'com.android.support.constraint:constraint-layout:+'
+}
+dependencies {
+    compile 'com.android.support.constraint:constraint-layout:+'
+}
